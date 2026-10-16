@@ -103,7 +103,7 @@ a change came from, not *why* the world did it; that last step is still yours.
 ## Install & use
 
 ```bash
-git clone https://github.com/<you>/whyline && cd whyline
+git clone https://github.com/sumit200531/whyline && cd whyline
 pip install -e ".[dev]"
 whyline demo --html demo.html          # synthetic data with planted incidents, plus the answer key
 pytest                                  # 13 tests, < 1 s

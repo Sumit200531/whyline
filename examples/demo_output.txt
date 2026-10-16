@@ -1,0 +1,22 @@
+whyline · conversion rate · 2026-W38 → 2026-W39
+
+  3.29% → 2.93%   ▼ −0.36 pp, −11.0%
+
+  3 causes explain 96% of the change.
+
+   #        impact   share  mechanism  segment
+   1      −0.30 pp     83%  mix        channel=paid_social
+                                       share of sessions 12.3% → 26.5%; it runs at 1.44% vs 3.29% overall (worse than average). Its own conversion rate barely moved (1.48% → 1.40%): this is who arrived, not how they behaved.
+                                       z = −99.0 vs 8 prior periods → strong
+   2      −0.19 pp     52%  rate       country=IN · device=android
+                                       conversion rate 2.22% → 0.93% within this segment, which is 16.0% of sessions.
+                                       z = −19.5 vs 8 prior periods → strong
+   3      +0.14 pp    −39%  rate       country=US · user_type=returning
+                                       conversion rate 5.80% → 6.86% within this segment, which is 8.7% of sessions.
+                                       z = +4.8 vs 8 prior periods → strong
+          −0.02 pp      4%             unexplained
+
+What was actually planted:
+  - rate  country=IN · device=android        payment-gateway outage for Android users in India
+  - mix   channel=paid_social                new paid-social campaign brought low-intent traffic
+  - rate  country=US · user_type=returning   loyalty promotion for returning US customers

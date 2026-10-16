@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whyline"
+version = "0.1.0"
+description = "Explain why a metric moved: counterfactual root-cause analysis with Shapley attribution."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.24", "pandas>=2.0"]
+keywords = ["root cause analysis", "metrics", "analytics", "shapley", "anomaly", "kpi"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+whyline = "whyline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["whyline*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
